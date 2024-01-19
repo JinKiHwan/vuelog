@@ -6,15 +6,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link disabled">Disabled</a>
+        <router-link class="nav-link" to="/">Home</router-link>
+        <router-link class="nav-link" href="#" to="/list">List</router-link>
       </div>
     </div>
   </nav>
-  <router-link to="/">홈</router-link>
-  <router-link to="/list">리스트 페이지</router-link>
+
   <router-view :blogData="blogData"></router-view>
 </template>
 

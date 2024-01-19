@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from 'vue-router';
 import PostList from './components/PostList';
 import HomeList from './components/HomeList';
+import DetailList from './components/DetailList';
 
 const routes = [
   {
@@ -10,6 +11,10 @@ const routes = [
   {
     path: '/',
     component: HomeList,
+  },
+  {
+    path: '/detail',
+    component: DetailList,
   },
 ];
 
