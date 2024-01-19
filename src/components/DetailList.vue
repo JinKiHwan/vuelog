@@ -1,11 +1,17 @@
 <template>
-  <h6>제목</h6>
-  <p>글내용</p>
+  <div>
+    <h6>{{ blogData[$route.params.id].title }}</h6>
+    <p>{{ blogData[$route.params.id].content }}</p>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'detailList',
+
+  props: {
+    blogData: Array,
+  },
 };
 </script>
 

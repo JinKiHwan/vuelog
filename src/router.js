@@ -13,7 +13,12 @@ const routes = [
     component: HomeList,
   },
   {
-    path: '/detail',
+    path: '/detail/:id(\\d+)',
+    component: DetailList,
+  },
+  {
+    /* 404 페이지 만들 수 있음 순서는 가장 마지막 */
+    path: '/:anithing(.*)',
     component: DetailList,
   },
 ];
