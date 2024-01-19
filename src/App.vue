@@ -13,26 +13,17 @@
       </div>
     </div>
   </nav>
-
-  <div class="container mt-4">
-    <h5>리액트 개발자의 블로그 입니다.</h5>
-    <p>- 뷰로 만들었음</p>
-  </div>
-
-  <!-- 블로그 리스트 -->
-  <PostList :blogData="blogData" />
-  <!-- //블로그 리스트 -->
+  <router-link to="/">홈</router-link>
+  <router-link to="/list">리스트 페이지</router-link>
+  <router-view :blogData="blogData"></router-view>
 </template>
 
 <script>
-import PostList from './components/PostList.vue';
 import blogData from './assets/blog';
 
 export default {
   name: 'App',
-  components: {
-    PostList: PostList,
-  },
+  components: {},
   data() {
     return {
       blogData: blogData,
