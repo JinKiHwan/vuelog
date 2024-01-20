@@ -1,20 +1,14 @@
 <template>
   <div>
-    <router-link to="/detail">
-      <h5>{{ blogData[0].title }}</h5>
-    </router-link>
+    <h5 @click="$router.go(-1)">{{ blogData[0].title }}</h5>
     <p>{{ blogData[0].date }}</p>
   </div>
   <div>
-    <router-link to="/detail">
-      <h5>{{ blogData[1].title }}</h5>
-    </router-link>
+    <h5 @click="$router.push('/detail/1')">{{ blogData[1].title }}</h5>
     <p>{{ blogData[1].date }}</p>
   </div>
   <div>
-    <router-link to="/detail">
-      <h5>{{ blogData[2].title }}</h5>
-    </router-link>
+    <h5 @click="$router.push('/detail/2')">{{ blogData[2].title }}</h5>
     <p>{{ blogData[2].date }}</p>
   </div>
 </template>

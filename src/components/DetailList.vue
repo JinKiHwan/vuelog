@@ -2,6 +2,7 @@
   <div>
     <h6>{{ blogData[$route.params.id].title }}</h6>
     <p>{{ blogData[$route.params.id].content }}</p>
+    <router-view></router-view>
   </div>
 </template>
 
