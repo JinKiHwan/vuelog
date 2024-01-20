@@ -17,4 +17,22 @@ export default [
     date: 'April 24, 2019',
     number: 2,
   },
+  {
+    title: '넷 째 프로젝트 : 구라 앱',
+    content: '거리를 설정하면 가장 가까운 파이터를 소개해드려요! 서로 싸워보세요',
+    date: 'April 24, 2019',
+    number: 2,
+  },
+  {
+    title: '다섯 째 프로젝트 : 어쩌라고',
+    content: '거리를 설정하면 가장 가까운 파이터를 소개해드려요! 서로 싸워보세요',
+    date: 'April 24, 2019',
+    number: 2,
+  },
+  {
+    title: '여섯 째 프로젝트 : 음바페',
+    content: '거리를 설정하면 가장 가까운 파이터를 소개해드려요! 서로 싸워보세요',
+    date: 'April 24, 2019',
+    number: 2,
+  },
 ];
